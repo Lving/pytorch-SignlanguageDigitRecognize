@@ -11,22 +11,33 @@
 
 #### DataSet Preview
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_0.JPG)
+<div align="center">
+    <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_0.JPG">
+    <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_1.JPG">
+    <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_2.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_1.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_3.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_2.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_4.JPG"></div >
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_3.JPG)
+<div align="center">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_4.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_5.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_5.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_6.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_6.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_7.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_7.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_8.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_8.JPG)
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_9.JPG">
 
-![image](https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_8.JPG)
+</div >
+
+
+
+
+
+
+
+
