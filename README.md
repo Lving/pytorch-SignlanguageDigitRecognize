@@ -11,16 +11,16 @@
 
 #### DataSet Preview
 
-<figure class="five">
+<div align="center">
     <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_0.JPG">
     <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_1.JPG">
     <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_2.JPG">
 
 <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_3.JPG">
 
-<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_4.JPG"></figure >
+<img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_4.JPG"></div >
 
-<figure class="five">
+<div align="center">
 
 <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_5.JPG">
 
@@ -32,7 +32,7 @@
 
 <img src="https://github.com/Lving/pytorch-SignlanguageDigitRecognize/blob/master/img/example_9.JPG">
 
-</figure >
+</div >
 
 
 
