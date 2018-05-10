@@ -1,34 +1,16 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from torch.autograd import Variable
 
 from sklearn.model_selection import train_test_split
 
-
-class LeNet(nn.Module):
-    def __init__(self):
-        super(LeNet, self).__init__()
-        self.conv1 = nn.Conv2d(in_channels=1, out_channels=3, kernel_size=9)  # 60 * 60
-        self.conv2 = nn.Conv2d(in_channels=3, out_channels=6, kernel_size=7)  #
-        self.fc1   = nn.Linear(11*11*6, 120)
-        self.fc2   = nn.Linear(120, 84)
-        self.fc3   = nn.Linear(84, 10)
-
-    def forward(self, x):
-        out = F.relu(self.conv1(x))  # None * 56 * 56 * 3
-        out = F.max_pool2d(out, 2)  # None * 28 * 28 * 3
-        out = F.relu(self.conv2(out))  # None * 22 * 22 * 6
-        out = F.max_pool2d(out, 2)    # None * 11 * 11 * 6
-        out = out.view(out.size(0), -1)  #
-        out = F.relu(self.fc1(out))
-        out = F.relu(self.fc2(out))
-        out = self.fc3(out)
-        return out
+# from conv_origin import Net
+from nin import Net
 
 
 class SignLanguageDataSet(Dataset):
@@ -67,7 +49,7 @@ trainDataLoader = DataLoader(trainSignData, shuffle=True, batch_size=32)
 testSignData = SignLanguageDataSet(x_test, y_test, onehot=True)
 testDataLoader = DataLoader(testSignData, shuffle=False, batch_size=32)
 
-net = LeNet()
+net = Net()
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(net.parameters(), lr=0.001)
 best_acc = 0  # best test accuracy
@@ -94,7 +76,6 @@ def train(epoch):
         print('TRAIN Epoch %d | Loss: %.3f | Acc: %.3f%% (%d/%d)' % (epoch, train_loss/(batch_idx+1), 100.*correct/total,
                                                                correct, total))
 
-
 def test(epoch):
     net.eval()
     test_loss = 0
@@ -109,14 +90,14 @@ def test(epoch):
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
-        print('TEST Epoch %d | Loss: %.3f | Acc: %.3f%% (%d/%d)' % (epoch, test_loss / (batch_idx + 1), 100.*correct/total,
+    print('TEST Epoch %d | Loss: %.3f | Acc: %.3f%% (%d/%d)' % (epoch, test_loss / (batch_idx + 1), 100.*correct/total,
                                                                correct, total))
 
 
 if __name__ == '__main__':
-    for epoch in range(start_epoch, start_epoch+200):
+    for epoch in range(start_epoch, start_epoch+20):
         train(epoch)
-        test(epoch)
+    test(epoch)
 
 
 
